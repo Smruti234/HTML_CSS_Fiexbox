@@ -1,0 +1,60 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 1;
+    order: 1;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+  }
+  #main > nav {
+    background-color: blue;
+    order: 3;
+  }
+  #main > aside {
+    background: rgb(223, 223, 10);
+    order: 2;
+  }
+  header, footer {
+    background: brown;
+    height: 20vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 2em;
+  }
+</style>
+<body>
+  <header>Header</header>
+  <div id="main">
+    <article>Article
+        <img src="" alt="">
+        <h1>NEVER GET REAL JOB</h1>
+        <img class="media-object" src="/pix/samples/9s.jpg" alt="Sample photo">
+        <P>A startup is a company that's in the initial stages of business.
+            Founders normally finance their startups and may attempt to attract outside investment before they get off the ground.
+            Funding sources include family and friends, venture capitalists, crowdfunding, and loans.
+            Startups must also consider where they'll do business and their legal structure.
+            Startups come with high risk as failure is very possible but they can also be very unique places to work with great benefits, a focus on innovation, and great opportunities to learn.</P>
+    </article>
+    <nav>Nav
+        <p>During the earliest stages of starting a business, the last thing you should concern yourself with is writing lengthy plans or long-winded executive summaries. It's time to kill the traditional business plan in favor of a realistic, practical tool: a one-paragraph startup plan</p>
+    </nav>
+    <aside>Aside</aside>
+  </div>
+  <footer>Footer</footer>
+</body>
